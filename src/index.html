@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор Калорий</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+  </head>
+  <body>
+    <div class="calorie-calculator">
+      <h1 class="calorie-calculator__title">Калькулятор Калорий</h1>
+
+      <!-- Форма добавления продукта -->
+      <div class="calorie-calculator__form">
+        <h2 class="calorie-calculator__subtitle">Добавить Продукт</h2>
+        <input
+          type="text"
+          class="calorie-calculator__input"
+          id="product-name"
+          placeholder="Название продукта" />
+        <input
+          type="number"
+          class="calorie-calculator__input"
+          id="product-calories"
+          placeholder="Калорийность" />
+        <button class="calorie-calculator__button" id="add-product">Добавить</button>
+      </div>
+
+      <!-- Установка дневного лимита калорий -->
+      <div class="calorie-calculator__goal">
+        <h2 class="calorie-calculator__subtitle">Установить Цель по Калориям</h2>
+        <input
+          type="number"
+          class="calorie-calculator__input"
+          id="daily-calorie-limit"
+          placeholder="Дневной лимит" />
+        <button class="calorie-calculator__button" id="set-goal">Установить Цель</button>
+      </div>
+
+      <!-- Фильтрация и сортировка продуктов -->
+      <div class="calorie-calculator__controls">
+        <input type="text" id="filter-input" placeholder="Фильтр по названию" />
+        <button id="sort-calories">Сортировать по калорийности</button>
+      </div>
+
+      <!-- Список продуктов -->
+      <div class="calorie-calculator__list">
+        <h2 class="calorie-calculator__subtitle">Список Продуктов</h2>
+        <ul id="products">
+          <!-- Список продуктов будет сюда -->
+        </ul>
+      </div>
+
+      <!-- Место для графика калорий -->
+      <div class="calorie-calculator__chart">
+        <h2 class="calorie-calculator__subtitle">График Калорий</h2>
+        <!-- График калорий будет здесь -->
+      </div>
+
+      <!-- Блок для очистки данных -->
+      <div class="calorie-calculator__clear">
+        <button
+          class="calorie-calculator__button calorie-calculator__button--clear"
+          id="clear-data">
+          Очистить Все Данные
+        </button>
+      </div>
+    </div>
+
+    <!-- Подключение JavaScript -->
+    <script src="./js/main.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+.calorie-calculator {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calorie-calculator__title,
+.calorie-calculator__subtitle {
+  color: #333;
+  text-align: center;
+}
+
+.calorie-calculator__form,
+.calorie-calculator__goal,
+.calorie-calculator__list,
+.calorie-calculator__chart {
+  margin-bottom: 20px;
+}
+
+.calorie-calculator__input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.calorie-calculator__button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.calorie-calculator__button:hover {
+  background-color: #0056b3;
+}
+
+.calorie-calculator__button--clear {
+  background-color: #dc3545;
+}
+
+.calorie-calculator__button--clear:hover {
+  background-color: #c82333;
+}
+
+.calorie-calculator__clear {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.chart-container {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.chart-progress {
+  height: 20px;
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}
+
+.chart-progress--safe {
+  background-color: #28a745;
+}
+
+.chart-progress--exceed {
+  background-color: #dc3545;
+}
+
+.chart-progress__text {
+  color: white;
+  padding: 0 5px;
+}
