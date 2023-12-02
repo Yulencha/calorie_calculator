@@ -16,7 +16,7 @@ let dailyCalorieLimit = JSON.parse(localStorage.getItem("dailyCalorieLimit")) ||
 function addProduct() {
   // Получаем название и калорийность продукта
   const name = productNameInput.value.trim();
-  const calories = parseInt(productCaloriesInput.value, 10);
+  const calories = Math.abs(parseInt(productCaloriesInput.value, 10));
 
   // Проверяем  корректность введенных данных
   if (name && !isNaN(calories)) {
@@ -34,7 +34,7 @@ function addProduct() {
 // Функция для установки дневной цели по калориям
 function setGoal() {
   // Получаем новый лимит калорий
-  dailyCalorieLimit = parseInt(calorieLimitInput.value, 10);
+  dailyCalorieLimit = Math.abs(parseInt(calorieLimitInput.value, 10));
   // Проверяем  корректность введенных данных
   if (!isNaN(dailyCalorieLimit)) {
     // Сохраняем данные в localStorage
